@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLAdminAlumnoController">
+   <children>
+      <TableView fx:id="tvAlumnos" layoutX="26.0" layoutY="130.0" prefHeight="249.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="colMatricula" prefWidth="58.0" text="Matricula" />
+          <TableColumn fx:id="colApPaterno" prefWidth="100.0" text="Apellido Paterno" />
+            <TableColumn fx:id="colApMaterno" prefWidth="105.0" text="Apellido Materno" />
+            <TableColumn fx:id="colNombre" prefWidth="91.0" text="Nombre" />
+            <TableColumn fx:id="colFacultad" minWidth="0.0" prefWidth="89.0" text="Facultad" />
+            <TableColumn fx:id="colCarrera" prefWidth="118.0" text="Carrera" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfBuscar" layoutX="26.0" layoutY="33.0" promptText="Buscar Alumno" />
+      <Button layoutX="238.0" layoutY="33.0" mnemonicParsing="false" onAction="#btnClicAgregar" text="Agregar" />
+      <Button layoutX="331.0" layoutY="33.0" mnemonicParsing="false" onAction="#btnClicModificar" text="Modificar" />
+      <Button layoutX="435.0" layoutY="33.0" mnemonicParsing="false" onAction="#btnClicEliminar" text="Eliminar" />
+   </children>
+</AnchorPane>

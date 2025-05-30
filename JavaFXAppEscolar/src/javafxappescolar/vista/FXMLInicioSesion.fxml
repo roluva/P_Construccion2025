@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ingresarContraseña" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLInicioSesionController">
+   <children>
+      <Label layoutX="363.0" layoutY="34.0" text="Bienvenido (a)" textFill="#335cff">
+         <font>
+            <Font name="American Typewriter" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="330.0" layoutY="83.0" prefHeight="39.0" prefWidth="236.0" text="Ingresa tu usuario y contraseña para acceder al sistema" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Label layoutX="337.0" layoutY="142.0" text="Usuario:" />
+      <Label layoutX="337.0" layoutY="233.0" text="Contraseña:" />
+      <TextField fx:id="ingresarUsuario" layoutX="337.0" layoutY="164.0" promptText="Juan Pérez" />
+      <Label fx:id="errorUsuario" layoutX="344.0" layoutY="199.0" prefHeight="27.0" prefWidth="145.0" textFill="#e81f1f" />
+      <Label fx:id="errorContraseña" layoutX="346.0" layoutY="301.0" prefHeight="17.0" prefWidth="145.0" textFill="#e81f1f" />
+      <Button layoutX="375.0" layoutY="325.0" mnemonicParsing="false" onAction="#clicIniciarSesion" prefHeight="29.0" prefWidth="145.0" style="-fx-background-color: green;" text="Iniciar Sesión" textFill="WHITE" />
+      <AnchorPane layoutY="-1.0" prefHeight="400.0" prefWidth="291.0" />
+      <PasswordField fx:id="ingresarContraseñaa" layoutX="337.0" layoutY="263.0" promptText="juan123" />
+   </children>
+</AnchorPane>
